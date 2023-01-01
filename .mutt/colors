@@ -1,0 +1,38 @@
+## Mutt Colors
+
+# for transparent mutt
+color normal default default
+
+color hdrdefault cyan default
+color quoted   green default
+color quoted1  cyan  default
+color quoted2  blue  default
+color signature  green default
+color attachment brightyellow default
+color indicator blue cyan
+color status   white blue
+color tree     cyan default
+color markers  brightred default
+color tilde    blue default
+color header   brightgreen default ^From:
+color header   brightcyan default ^To:
+color header   brightcyan default ^Reply-To:
+color header   brightcyan default ^Cc:
+color header   brightwhite default ^Subject:
+color body     white default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color body     white default (http|https|ftp)://[\-\.\,/%~_:?\#a-zA-Z0-9\=\&]+
+
+
+# unread messages
+color index brightcyan default ~U
+# new messages
+color index brightcyan default ~N
+# my emails
+#color index brightyellow  default "~f dannybrain@dannybrain.org"
+
+# flagged messages
+color index brightcyan default ~F 
+# tagged messages
+color index white blue ~T
+# deleted messages
+color index brightblack default ~D

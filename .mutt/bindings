@@ -1,0 +1,8 @@
+## Mutt Bindings
+bind pager \Cb  previous-page
+bind pager \Cf  next-page # \Cf was 'f'orget-passphrase
+bind pager \Cv  forget-passphrase # \Cv --> 'f'orget-passphrase
+
+bind pager G	   bottom
+bind pager gg      top
+

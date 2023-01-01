@@ -1,0 +1,13 @@
+## DannyBrain's Muttrc
+##
+## Sources all related files
+
+source ~/.mutt/aliases
+source ~/.mutt/bindings
+source ~/.mutt/colors
+source ~/.mutt/gpg.rc
+source ~/.mutt/gpg_commands
+source ~/.mutt/hooks
+source ~/.mutt/options
+source ~/.mutt/mailboxes
+

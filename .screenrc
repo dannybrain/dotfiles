@@ -1,0 +1,36 @@
+# .screenrc
+# Daniel Biehle, from 
+# Dave Kaufman 
+# http://davekaufman.net
+#
+# This file is used to initialize screen sessions
+
+startup_message off
+
+# C-A redefinition
+  escape ^Kk
+
+# Change default scrollback value for new windows
+  defscrollback 1000
+
+# Define the time that all windows monitored for silence should 
+# wait before displaying a message. Default 30 seconds.
+  silencewait 15   
+
+# Ensures that the default shell is the same as the value of the $SHELL env variable
+  shell -$SHELL
+
+# Pretty status bar at the bottom.
+hardstatus alwayslastline 
+#hardstatus string "%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m/%d %{W}%c %{g} %1` ]" 
+hardstatus string "%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m/%d %{g} ]" 
+# Don't you want to start programs which need a DISPLAY ?
+#setenv DISPLAY ':0'
+shelltitle Shell
+
+# Default Buffers
+screen    -t Monitor 0 /usr/local/bin/glances --disable-bg --disable-fs  
+screen    -t Shell 1
+#screen -M -t IRC   3 irssi
+#backtick 1 0 60 battery.sh
+select 1

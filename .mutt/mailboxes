@@ -1,0 +1,20 @@
+## My Mailboxes
+#set mbox_type=Maildir
+#set folder=$HOME/.maildir
+
+set imap_home_namespace=INBOX
+set spoolfile=imap://dannybrain@dannybrain.org:Obi1Keno@mail.dannybrain.org/INBOX
+set mbox=imap://dannybrain@dannybrain.org:Obi1Keno@mail.dannybrain.org/INBOX
+set folder=imap://dannybrain@dannybrain.org:Obi1Keno@mail.dannybrain.org/
+
+#set record = +sent
+#set spoolfile=$HOME/.maildir
+#set postponed = +postponed
+
+#mailboxes !
+#mailboxes +abraham
+#mailboxes +boulo
+#mailboxes +misc
+#mailboxes +friends
+#mailboxes +spam
+#mailboxes +misc

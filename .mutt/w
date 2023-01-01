@@ -1,0 +1,52 @@
+## Mutt Options
+
+# Headers to show
+ignore *
+unignore From: To Cc Subject User-Agent X-Mailer Date
+hdr_order Date From: To Cc Subject User-Agent X-Mailer
+
+# A
+set abort_nosubject=yes
+set abort_unmodified=no
+set alias_file="~/.mutt/aliases"
+set allow_8bit 
+
+# B
+
+# C
+unset confirmappend
+set charset="utf-8"
+
+# E
+set envelope_from
+
+# F
+set fast_reply
+set forward_format="Fwd: %s"
+
+# H
+set hostname="maluntu.maverick.org"
+
+# I
+set include # include text in replies
+
+# M
+set move=no	# do not save read messages
+
+# P
+set pager_index_lines=15
+set recall=no      # do not prompt for recalling postponed mails with 'm'
+set postpone=no	   # do not prompt to postpone aborted messages
+
+# R
+set realname="Daniel Biehle"
+set reverse_name
+set reverse_alias  # show the name of sender as set with my alias for him
+
+# S
+set sort=threads
+set status_on_top
+set status_format=" %v  [%u/%n/%m] unread/new/total messages (%l) - %b mailboxe(s) with unread messages - %f  %|-"
+set sort_aux=date
+set sleep_time=0  # no sleep when switching mailbox
+
