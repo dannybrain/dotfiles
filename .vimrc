@@ -2,7 +2,8 @@ set ignorecase
 set hlsearch
 set incsearch
 set nu
-set modeline
+set nomodeline
+"set mouse=a
 set ruler
 "set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim74,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
@@ -21,3 +22,9 @@ set textwidth=79
 " use space instead of za to unfold
 nnoremap <space> za 
 syntax on
+
+
+"get to the last position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
